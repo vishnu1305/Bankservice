@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BankSOAP - Online Banking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">BankSOAP</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#create">Create Account</a>
+            <a href="#operations">Banking</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Simple & Secure Banking</h1>
+
+            <p>
+                Manage your bank account, check your balance,
+                deposit money and withdraw money — all in one place.
+            </p>
+
+            <a href="#create" class="button">
+                Create Account
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CREATE ACCOUNT -->
+
+    <section id="create" class="section">
+
+        <h2>Create New Account</h2>
+
+        <div class="card">
+
+            <label for="name">Account Holder Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <label for="initialBalance">
+                Initial Deposit
+            </label>
+
+            <input
+                type="number"
+                id="initialBalance"
+                placeholder="Enter initial amount"
+                min="0"
+            >
+
+
+            <button onclick="createAccount()">
+                Create Account
+            </button>
+
+
+            <div id="createResult" class="result"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BANKING OPERATIONS -->
+
+    <section id="operations" class="section">
+
+        <h2>Banking Operations</h2>
+
+
+        <div class="operations-grid">
+
+
+            <!-- ACCOUNT DETAILS -->
+
+            <div class="card">
+
+                <h3>Account Details</h3>
+
+                <input
+                    type="text"
+                    id="detailsAccountNumber"
+                    placeholder="Account Number"
+                >
+
+                <button onclick="getAccountDetails()">
+                    Get Details
+                </button>
+
+                <div id="detailsResult" class="result"></div>
+
+            </div>
+
+
+            <!-- BALANCE -->
+
+            <div class="card">
+
+                <h3>Check Balance</h3>
+
+                <input
+                    type="text"
+                    id="balanceAccountNumber"
+                    placeholder="Account Number"
+                >
+
+                <button onclick="checkBalance()">
+                    Check Balance
+                </button>
+
+                <div id="balanceResult" class="result"></div>
+
+            </div>
+
+
+            <!-- DEPOSIT -->
+
+            <div class="card">
+
+                <h3>Deposit Money</h3>
+
+                <input
+                    type="text"
+                    id="depositAccountNumber"
+                    placeholder="Account Number"
+                >
+
+                <input
+                    type="number"
+                    id="depositAmount"
+                    placeholder="Amount"
+                    min="1"
+                >
+
+                <button onclick="depositMoney()">
+                    Deposit
+                </button>
+
+                <div id="depositResult" class="result"></div>
+
+            </div>
+
+
+            <!-- WITHDRAW -->
+
+            <div class="card">
+
+                <h3>Withdraw Money</h3>
+
+                <input
+                    type="text"
+                    id="withdrawAccountNumber"
+                    placeholder="Account Number"
+                >
+
+                <input
+                    type="number"
+                    id="withdrawAmount"
+                    placeholder="Amount"
+                    min="1"
+                >
+
+                <button onclick="withdrawMoney()">
+                    Withdraw
+                </button>
+
+                <div id="withdrawResult" class="result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 BankSOAP | SOAP-Based Banking System
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

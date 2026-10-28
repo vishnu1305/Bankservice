@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:bank="http://bank.com/service">
+
+    <soapenv:Header/>
+
+    <soapenv:Body>
+
+        <bank:CheckBalanceRequest>
+            <bank:accountNumber>1002</bank:accountNumber>
+        </bank:CheckBalanceRequest>
+
+    </soapenv:Body>
+
+</soapenv:Envelope>

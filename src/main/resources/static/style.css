@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    height: 70px;
+    background: #102a43;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #1f5f8b
+    );
+
+    color: white;
+
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: white;
+    color: #102a43;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
+
+    color: #102a43;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    max-width: 500px;
+
+    margin: auto;
+}
+
+.card h3 {
+    font-size: 24px;
+
+    margin-bottom: 20px;
+
+    color: #102a43;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #1f5f8b;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #1f5f8b;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #163f5c;
+}
+
+
+/* =========================
+   OPERATIONS GRID
+   ========================= */
+
+.operations-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.operations-grid .card {
+    width: 100%;
+}
+
+
+/* =========================
+   RESULTS
+   ========================= */
+
+.result {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #eef5fa;
+
+    border-radius: 5px;
+
+    min-height: 20px;
+
+    line-height: 1.5;
+
+    word-wrap: break-word;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: #102a43;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .operations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+}

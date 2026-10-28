@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:bank="http://bank.com/service">
+
+    <soapenv:Header/>
+
+    <soapenv:Body>
+
+        <bank:CreateAccountRequest>
+
+            <bank:name>Amitha</bank:name>
+
+            <bank:initialBalance>10000</bank:initialBalance>
+
+        </bank:CreateAccountRequest>
+
+    </soapenv:Body>
+
+</soapenv:Envelope>

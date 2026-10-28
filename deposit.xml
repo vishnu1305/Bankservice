@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:bank="http://bank.com/service">
+
+    <soapenv:Header/>
+
+    <soapenv:Body>
+
+        <bank:DepositRequest>
+            <bank:accountNumber>1002</bank:accountNumber>
+            <bank:amount>3000</bank:amount>
+        </bank:DepositRequest>
+
+    </soapenv:Body>
+
+</soapenv:Envelope>

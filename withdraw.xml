@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:bank="http://bank.com/service">
+
+    <soapenv:Header/>
+
+    <soapenv:Body>
+
+        <bank:WithdrawRequest>
+            <bank:accountNumber>1002</bank:accountNumber>
+            <bank:amount>2000</bank:amount>
+        </bank:WithdrawRequest>
+
+    </soapenv:Body>
+
+</soapenv:Envelope>
